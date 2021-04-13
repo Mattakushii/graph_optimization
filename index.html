@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Вахтель Максим ВМ-41</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="select">
+      <select name="select_ex" id="exercise">
+        <option value="ex1" selected disabled>Выберите задание</option>
+        <option style="color: crimson; font-size: 16px;" disabled>ОБЩИЕ ЗАДАЧИ</option>
+        <option value="ex1">Задание 1</option>
+        <option value="ex2">Задание 2</option>
+        <option value="ex3">Задание 3</option>
+        <option value="ex4">Задание 4</option>
+        <option style="color: crimson; font-size: 16px;" disabled>ВАРИАНТ 2</option>
+        <option value="ex5">Задание 1</option>
+        <option value="ex6">Задание 2</option>
+        <option value="ex7">Задание 3</option>
+      </select>
+    </div>
+    <div id="container">
+      <div id="header_exercise">
+        <h3 id="exercise_text"></h3>
+        <input id="dimension" style="width: 250px;" placeholder="Введите размерность матрицы" type="number" max="9"
+          min="2">
+        <button id="createBtn">Создать матрицу</button>
+        <button id='calc'>Вычислить</button>
+      </div>
+      <div id="matrix"></div>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
